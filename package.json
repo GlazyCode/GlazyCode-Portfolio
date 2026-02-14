@@ -1,0 +1,9 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio with GlazyCode chatbot",
+  "private": true,
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  }
+}

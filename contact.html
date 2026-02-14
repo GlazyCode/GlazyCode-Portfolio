@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | GlazyCode</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-section">
+        <a href="index.html" class="logo-link">
+          <i class="fas fa-circle"></i>
+          <span>Portfolio</span>
+        </a>
+        <a href="#" class="icon-link"><i class="fas fa-star"></i> Save</a>
+        <a href="#" class="icon-link"><i class="fas fa-share"></i> share</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="projects.html" class="nav-link">PROJECTS</a>
+        <a href="resume.html" class="nav-link">RESUME</a>
+        <a href="certificates.html" class="nav-link">CERTIFICATES</a>
+        <a href="about.html" class="nav-link">ABOUT ME</a>
+        <a href="contact.html" class="nav-link active">CONTACT</a>
+      </nav>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="index.html" class="nav-link">HOME</a>
+    <a href="projects.html" class="nav-link">PROJECTS</a>
+    <a href="resume.html" class="nav-link">RESUME</a>
+    <a href="certificates.html" class="nav-link">CERTIFICATES</a>
+    <a href="about.html" class="nav-link">ABOUT ME</a>
+    <a href="contact.html" class="nav-link active">CONTACT</a>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-page">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-header">
+          <h1>I'd love to hear from you!!</h1>
+          <p style="color: var(--text-secondary);">Have a question or want to work together? Fill out the form below and I'll get back to you as soon as possible.</p>
+        </div>
+
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <i class="fas fa-user"></i>
+            <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-phone"></i>
+            <input type="tel" name="phone" placeholder="Your Phone (Optional)">
+          </div>
+          <div class="form-group">
+            <i class="fas fa-tag"></i>
+            <input type="text" name="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-comment" style="top: 20px; transform: none;"></i>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="contact-info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Location</h4>
+            <p> Brgy. Ipil, Dipaculao, Aurora 3203, Philippines</p>
+          </div>
+          <div class="contact-info-card">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <p>patrickmacatiag29@email.com</p>
+          </div>
+          <div class="contact-info-card">
+            <i class="fas fa-phone"></i>
+            <h4>Phone</h4>
+            <p>+63 938 805 8811</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Lets work together on your next project</h2>
+        <p>Collaboration is key as I just take ideas and combine our skills to build your next project with a personalized setting that encompasses success.</p>
+        <a href="contact.html" class="btn btn-primary">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-text">GZ</span>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="resume.html">Resume</a>
+          <a href="certificates.html">Certificates</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/GlazyCode" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://youtube.com/@glzyasmrai?si=IBiyXGsBcLhOvXz0" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.facebook.com/Patrick.macatiag.Drequito" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/patrickjhay__" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">&copy; 2026 GlazyCode. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/mobile-menu.js"></script>
+</body>
+</html>

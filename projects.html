@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | GlazyCode</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-section">
+        <a href="index.html" class="logo-link">
+          <i class="fas fa-circle"></i>
+          <span>Portfolio</span>
+        </a>
+        <a href="#" class="icon-link"><i class="fas fa-star"></i> Save</a>
+        <a href="#" class="icon-link"><i class="fas fa-share"></i> share</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="projects.html" class="nav-link active">PROJECTS</a>
+        <a href="resume.html" class="nav-link">RESUME</a>
+        <a href="certificates.html" class="nav-link">CERTIFICATES</a>
+        <a href="about.html" class="nav-link">ABOUT ME</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
+      </nav>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="index.html" class="nav-link">HOME</a>
+    <a href="projects.html" class="nav-link active">PROJECTS</a>
+    <a href="resume.html" class="nav-link">RESUME</a>
+    <a href="certificates.html" class="nav-link">CERTIFICATES</a>
+    <a href="about.html" class="nav-link">ABOUT ME</a>
+    <a href="contact.html" class="nav-link">CONTACT</a>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="projects-page">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+        <span class="section-label"><i class="fas fa-folder-open"></i> My Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 20px auto 0; font-size: 0.95rem;">
+          A collection of my best work showcasing my skills and determination to learn and to be software engineer someday!
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="design">UI/UX</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1 - Scratch: click to play -->
+        <div class="project-card project-card-scratch" data-category="web" id="scratch-project-card" role="button" tabindex="0" title="Click to play">
+          <div class="project-image">
+            <img src="src/images/project_thumb/project1.png" alt="Histoquest">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://scratch.mit.edu/projects/1279498993/" target="_blank" class="project-link" onclick="event.stopPropagation();"><i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/GlazyCode" class="project-link" onclick="event.stopPropagation();"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Scratch</span>
+
+            </div>
+            <h3>HistoQuest - Adventure Pixel History Game </h3>
+            <p>A history-themed quiz game built with Scratch, a block-based programming language. Made in my first year of college with no prior programming experience. Best played on PC. This project has some known bugs and is no longer actively maintained—I’ve left it as-is since it’s not my main focus.</p>
+          </div>
+        </div>
+
+
+
+        <div class="project-card" data-category="mobile">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="Fitness Tracker">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Dart</span>
+              <span class="project-tag">Git</span>
+              <span class="project-tag">Android Studio</span>
+
+            </div>
+            <h3>Fitness Tracker Mobile App</h3>
+            <p>A cross-platform mobile application for tracking workouts, nutrition, and health goals with personalized recommendations.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Analytics Platform">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">XAMPP : mySQL</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">php</span>
+            </div>
+            <h3>Tithes & Offering Management System - on development </h3>
+            <p>A powerful data analytics platform with interactive charts, custom reports, and automated insights for SDA tithes and offering.</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="mobile">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop" alt="Social Media App">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">Dart</span>
+            </div>
+            <h3>Social Networking App - Private Messenger App</h3>
+            <p>A feature-rich social media mobile app with real-time messaging, stories, and content sharing capabilities.</p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Lets work together on your next project</h2>
+        <p>Collaboration is key as I just take ideas and combine our skills to build your next project with a personalized setting that encompasses success.</p>
+        <a href="contact.html" class="btn btn-primary">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-text">JD</span>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="certificates.html">Certificates</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/GlazyCode" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://youtube.com/@glzyasmrai?si=IBiyXGsBcLhOvXz0" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.facebook.com/Patrick.macatiag.Drequito" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/patrickjhay__" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">&copy; 2026 GlazyCode. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scratch project modal (iframe) - opens when Project 1 card is clicked -->
+  <div id="scratch-modal" class="scratch-modal" aria-hidden="true">
+    <div class="scratch-modal-backdrop" id="scratch-modal-backdrop"></div>
+    <div class="scratch-modal-box">
+      <div class="scratch-modal-header">
+        <span class="scratch-modal-title"><i class="fas fa-gamepad"></i> HistoQuest</span>
+        <a href="https://scratch.mit.edu/projects/1279498993/" target="_blank" class="scratch-modal-link" onclick="event.stopPropagation();">Open on Scratch <i class="fas fa-external-link-alt"></i></a>
+        <button type="button" class="scratch-modal-close" id="scratch-modal-close" aria-label="Close"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="scratch-modal-body">
+        <iframe id="scratch-iframe" src="about:blank" title="HistoQuest - Play on Scratch" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/scratch-embed.js"></script>
+  <script src="js/mobile-menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlazyCode | Portfolio</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-section">
+        <a href="index.html" class="logo-link">
+          <i class="fas fa-circle"></i>
+          <span>Portfolio</span>
+        </a>
+        <a href="#" class="icon-link"><i class="fas fa-star"></i> Save</a>
+        <a href="#" class="icon-link"><i class="fas fa-share"></i> share</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">HOME</a>
+        <a href="projects.html" class="nav-link">PROJECTS</a>
+        <a href="resume.html" class="nav-link">RESUME</a>
+        <a href="certificates.html" class="nav-link">CERTIFICATES</a>
+        <a href="about.html" class="nav-link">ABOUT ME</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
+      </nav>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i><!---BUtton for moobile nav-->
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="index.html" class="nav-link active">HOME</a>
+    <a href="projects.html" class="nav-link">PROJECTS</a>
+    <a href="resume.html" class="nav-link">RESUME</a>
+    <a href="certificates.html" class="nav-link">CERTIFICATES</a>
+    <a href="about.html" class="nav-link">ABOUT ME</a>
+    <a href="contact.html" class="nav-link">CONTACT</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, My Name Is</p>
+        <h1 class="hero-name">Glazy<span style="color: orangered;">CODE</span></h1>
+        <p class="hero-description">An aspiring fullstack developer, driven by the ever-evolving world of technology and its endless possibilities.</p>
+        <a href="contact.html" class="btn btn-primary">Contact me</a>
+      </div>
+      <div class="hero-image">
+        <div class="image-frame">
+          <img src="src/images/mypic/myphoto1.png" alt="Patrick Macatiag">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label"><i class="fas fa-user"></i> About me</span>
+        <h2 class="section-title">Who Am I</h2>
+      </div>
+      <div class="about-content">
+        <p class="about-text">
+My name is Glazy Code, a second-year BSIT student aspiring to become a full-stack developer focused on building functional and scalable websites and applications. I am still learning and honing my skills in backend development, databases, and system logic to create complete web-based solutions. I enjoy developing system-driven projects that solve real-world problems and am committed to continuously improving my skills to grow into a well-rounded full-stack developer.        </p>
+<div class="skills-tags">
+  <span class="skill-tag"><i class="fab fa-html5"></i> HTML</span>
+  <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS</span>
+  <span class="skill-tag"><i class="fab fa-js-square"></i> JavaScript</span>
+
+  <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+  <span class="skill-tag"><i class="fas fa-code"></i> C++</span>
+  <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+
+  <span class="skill-tag"><i class="fab fa-figma"></i> Figma</span>
+</div>
+
+        <a href="about.html" class="btn btn-secondary">Discover More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label"><i class="fas fa-briefcase"></i> My Services</span>
+        <h2 class="section-title">What Can I Do</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Creating visually stunning graphics and visual assets, I craft visually appealing and engaging user experiences.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Clean Code</h3>
+          <p>Writing clear & well-structured code following industry best practices. Ensuring clean and maintainable codebases.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Lets work together on your next project</h2>
+        <p>Collaboration is key as I just take ideas and combine our skills to build your next project with a personalized setting that encompasses success.</p>
+        <a href="contact.html" class="btn btn-primary">Contact</a>
+      </div>
+    </div>
+  </section>
+<!-- Patpat AI Chatbot -->
+<div id="chatbox">
+  <div id="chat-header">
+    <span>GlazyCode 🔥</span>
+    <button id="chat-toggle">✖</button>
+  </div>
+  <div id="chat-messages"></div>
+  <div id="chat-input-container">
+    <input type="text" id="chat-input" placeholder="Type your message...">
+    <button id="chat-send">Send</button>
+  </div>
+</div>
+<button id="chat-open-btn">💬</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-text">JD</span>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="certificates.html">Certificates</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/GlazyCode" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://youtube.com/@glzyasmrai?si=IBiyXGsBcLhOvXz0" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.facebook.com/Patrick.macatiag.Drequito" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/patrickjhay__" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">&copy; 2026 GlazyCode. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+<script src="js/glazycode-chat/chatbot.js"></script>
+  <script src="js/mobile-menu.js"></script>
+</body>
+</html>
