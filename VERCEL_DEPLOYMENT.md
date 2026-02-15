@@ -36,7 +36,8 @@ This guide will get your portfolio live on Vercel with **all features working**,
    git add .
    git commit -m "Portfolio with chatbot ready for Vercel"
    git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+ 
+                 
    git push -u origin main
    ```
    If Git asks you to log in, use your GitHub username and a **Personal Access Token** as the password (Settings → Developer settings → Personal access tokens).

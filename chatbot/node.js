@@ -1,7 +1,7 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const readlineSync = require("readline-sync");
 // Initialize Gemini model with your API key
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "AIzaSyC6evAqNKbSE4o7xEZ6dtXB6atPvnjIfRo");
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "models/gemini-2.5-flash" });
 
 async function startChat() {
