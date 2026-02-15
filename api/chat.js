@@ -101,7 +101,7 @@ module.exports = async (req, res) => {
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
       const genAI = new GoogleGenerativeAI(apiKey);
-      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const model = genAI.getGenerativeModel({ model: "models/gemini-2.5-flash" });
       const chat = model.startChat({
         history: [
           { role: "user", parts: [{ text: SYSTEM_PROMPT }] },
