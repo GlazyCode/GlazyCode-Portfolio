@@ -95,19 +95,54 @@ module.exports = async (req, res) => {
     return res.status(400).json({ reply: "Please send a valid message." });
   }
 
-  try {
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: "models/gemini-2.5-flash" });
-    const chat = model.startChat({
-      history: [
-        { role: "user", parts: [{ text: SYSTEM_PROMPT }] },
-      ],
-    });
-    const result = await chat.sendMessage(userMessage.trim());
-    const reply = result.response.text();
-    return res.status(200).json({ reply });
-  } catch (err) {
-    console.error("Chat API error:", err);
-    return res.status(500).json({ reply: "Something went wrong 😭 Try again in a moment." });
+  const maxRetries = 2;
+  let lastError = null;
+
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const genAI = new GoogleGenerativeAI(apiKey);
+      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+      const chat = model.startChat({
+        history: [
+          { role: "user", parts: [{ text: SYSTEM_PROMPT }] },
+        ],
+      });
+      const result = await chat.sendMessage(userMessage.trim());
+      const reply = result.response.text();
+      return res.status(200).json({ reply });
+    } catch (err) {
+      lastError = err;
+      const msg = String(err?.message || "").toLowerCase();
+
+      // User-friendly messages for known errors
+      if (msg.includes("429") || msg.includes("resource_exhausted") || msg.includes("rate limit")) {
+        return res.status(429).json({
+          reply: "Too many requests right now. Please wait a minute and try again. 🙂",
+        });
+      }
+      if (msg.includes("quota") || msg.includes("503") || msg.includes("unavailable")) {
+        return res.status(503).json({
+          reply: "The chat service is temporarily busy. Please try again in a few minutes.",
+        });
+      }
+      if (msg.includes("invalid") || msg.includes("404") || msg.includes("not found")) {
+        return res.status(500).json({
+          reply: "Chat configuration error. Please contact the site owner.",
+        });
+      }
+
+      // Retry on transient errors (network, timeout, 500)
+      if (attempt < maxRetries && (msg.includes("timeout") || msg.includes("500") || msg.includes("fetch") || msg.includes("econnreset"))) {
+        await new Promise((r) => setTimeout(r, 500 * attempt));
+        continue;
+      }
+
+      break;
+    }
   }
+
+  console.error("Chat API error:", lastError);
+  return res.status(500).json({
+    reply: "Something went wrong 😭 Try again in a moment.",
+  });
 };
